@@ -1,7 +1,7 @@
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
-const server = require('./server/app'); //Express server
+const server = require('./server/app'); //The Express server
 
 const path = require('path');
 const url = require('url');
