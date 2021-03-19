@@ -1,7 +1,7 @@
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
-const server = require('./app'); //Express server
+const server = require('./server/app'); //Express server
 
 const path = require('path');
 const url = require('url');
@@ -10,8 +10,8 @@ let mainWindow;
 
 function createWindow () {
     mainWindow = new BrowserWindow({ 
-        width: 800, 
-        height: 600,
+        // width: 800, 
+        // height: 600,
         show: false, //Not showing the window until the content loads
         webPreferences: {
             nodeIntegration: true,
